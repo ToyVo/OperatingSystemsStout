@@ -1,19 +1,22 @@
+#include "shell.hpp"
 #include <iostream>
-#include <stdio.h>
 #include <string>
 
 int main() {
   std::string cmd;
 
   while (true) {
-    std::cout << "> ";
+    std::cout << getenv("USER") << " > ";
     std::getline(std::cin, cmd);
+    write_history(cmd);
     if (cmd == "exit") {
-      break; // in case we need to do cleanup before exit
+      break;
     } else if (cmd == "history") {
-      std::cout << "history" << std::endl;
+      read_history();
     } else if (cmd == "pwd") {
-      std::cout << "pwd" << std::endl;
+      std::cout << getenv("PWD") << "\n";
     }
   }
+
+  return 0;
 }
