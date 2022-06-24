@@ -22,7 +22,7 @@ int main() {
     } else if (input_cmd == "history") {
       read_history();
     } else if (input_cmd == "pwd") {
-      std::cout << getenv("PWD") << "\n";
+      std::cout << getenv("PWD") << std::endl;
     } else {
       switch (eval_cmd(input_cmd, cmd1, cmd2)) {
       case PIPE:

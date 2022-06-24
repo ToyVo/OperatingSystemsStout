@@ -4,6 +4,7 @@
 
 #include "cmd.hpp"
 #include <fcntl.h>
+#include <iostream>
 #include <sstream>
 #include <sys/wait.h>
 #include <unistd.h>

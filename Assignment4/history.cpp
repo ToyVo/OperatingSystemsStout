@@ -8,13 +8,13 @@
 
 void write_history(const std::string &cmd) {
   std::ofstream historyFile(".shellhistory", std::ios_base::app);
-  historyFile << cmd << "\n";
+  historyFile << cmd << std::endl;
 }
 
 void read_history() {
   std::ifstream historyFile(".shellhistory");
   std::string cmd;
   while (std::getline(historyFile, cmd)) {
-    std::cout << cmd << "\n";
+    std::cout << cmd << std::endl;
   }
 }
