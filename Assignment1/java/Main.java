@@ -1,5 +1,3 @@
-package com.diekvoss;
-
 import java.util.Scanner;
 
 public class Main {
