@@ -41,5 +41,5 @@ int get_number_of_tokens(const std::string &cmd) {
     if (character == ' ')
       total++;
   }
-  return total;
+  return total + 1;
 }
