@@ -1,7 +1,4 @@
-**/.idea
-**/cmake-build-debug
 **/out
 *.out
+*.o
 *.class
-CMakeLists.txt
-.vscode
